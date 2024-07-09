@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonaActivity">
+
+    <EditText
+        android:id="@+id/cedulaEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Ingrese cédula" />
+    <EditText
+        android:id="@+id/nombreEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cedulaEditText"
+        android:layout_margin="16dp"
+        android:hint="Ingrese nombre" />
+    <EditText
+        android:id="@+id/provinciaEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nombreEditText"
+        android:layout_margin="16dp"
+        android:hint="Ingrese Provincia" />
+
+    <RadioGroup
+        android:id="@+id/genderRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/provinciaEditText"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonMasculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hombre" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFemenino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mujer" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/countrySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/genderRadioGroup"
+        android:layout_margin="16dp"
+        android:entries="@array/countries_array" />
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countrySpinner"
+        android:layout_margin="16dp"
+        android:text="Correo"
+        android:textSize="16sp"
+        android:inputType="textEmailAddress"
+      />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailTextView"
+        android:layout_margin="16dp"
+        android:text="Actualizar" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateButton"
+        android:layout_margin="16dp"
+        android:text="Salir" />
+</RelativeLayout>

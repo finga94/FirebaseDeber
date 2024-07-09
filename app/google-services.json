@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "502994395558",
+    "firebase_url": "https://inventario-6ba7e-default-rtdb.firebaseio.com",
+    "project_id": "inventario-6ba7e",
+    "storage_bucket": "inventario-6ba7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502994395558:android:7bab053fb773b94b27ef67",
+        "android_client_info": {
+          "package_name": "com.example.firebaserealtime"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4yu3fhBRJGRE98RKwyVrMIaolkbxLH-E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título de la actividad -->
+    <TextView
+        android:id="@+id/text_view_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COMPRAR PRODUCTOS"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/editTextCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese código"
+        android:inputType="text"/>
+
+    <!-- Botón para buscar el producto por código -->
+    <Button
+        android:id="@+id/buttonBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewNombreProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Producto: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stock: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <!-- TextView para mostrar el precio de venta del producto -->
+    <TextView
+        android:id="@+id/textViewPrecioVenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Precio de Venta: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextCantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese cantidad"
+        android:inputType="number"/>
+
+    <!-- TextView para mostrar el total a pagar -->
+    <TextView
+        android:id="@+id/textViewTotalPagar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total a pagar: $0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Botón para calcular el total a pagar -->
+    <Button
+        android:id="@+id/buttonRecalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total a pagar"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/buttonVender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comprar"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRODUCTO"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese código"
+        android:layout_below="@id/textViewTitle"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese nombre producto"
+        android:layout_below="@id/editTextCodigo"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese stock"
+        android:inputType="number"
+        android:layout_below="@id/editTextNombre"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextPrecioCosto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese precio costo"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/editTextStock"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextPrecioVenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese precio venta"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/editTextPrecioCosto"
+        android:layout_margin="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/firstButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/editTextPrecioVenta"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="24dp">
+
+        <Button
+            android:id="@+id/buttonGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/buttonActualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Actualizar"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/firstButtonLayout"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/buttonBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/buttonBorrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borrar"/>
+    </LinearLayout>
+
+    <!-- Botón Regresar -->
+    <Button
+        android:id="@+id/buttonRegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regresar"
+        android:layout_below="@id/secondButtonLayout"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
